@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login and Signup Page</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css">
+
+   
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 id="formTitle">Login Page</h1>
+      <form id="loginForm" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="a0bdfb25-6624-4c9a-8e1a-34448bdc0a63">
+
+        <div class="input_box">
+          <input type="text" placeholder="Username" required />
+          <i class="bx bxs-user"></i>
+        </div>
+
+        <div class="input_box">
+          <input type="text" placeholder="Email" required />
+          <i class="bx bxs-user"></i>
+        </div>
+
+        <div class="input_box">
+          <input type="password" placeholder="Password" required />
+          <i class="bx bxs-lock"></i>
+        </div>
+
+        <div class="rem-for">
+          <label><input type="checkbox" />Remember Me</label>
+          <a href="#">Forgot Password</a>
+        </div>
+
+        <div class="btn">
+          <button type="submit">Login</button>
+        </div>
+      </form>
+
+      <form id="signupForm" class="hidden">
+        <div class="input_box">
+          <input type="text" placeholder="New Username" required />
+          <i class="bx bxs-user"></i>
+        </div>
+
+        <div class="input_box">
+          <input type="password" placeholder="New Password" required />
+          <i class="bx bxs-lock"></i>
+        </div>
+
+
+        <div class="btn">
+          <button type="submit">Signup</button>
+        </div>
+      </form>
+
+      <div class="signup">
+        <p> Register <a href="#" onclick="toggleForm()">Signup</a></p>
+      </div>
+    </div>
+
+    <script src="js/index.js">
+    </script>
+  </body>
+</html>

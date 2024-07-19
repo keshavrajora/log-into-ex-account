@@ -1,0 +1,128 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    background: url(/j.jpg) no-repeat;
+    background-size: calc(340pc);
+    background-position: center;
+  }
+
+  .container {
+    width: 420px;
+    height: fit-content;
+    background-color: transparent;
+    border: 3px solid rgb(109, 107, 107);
+    border-radius: 30px;
+    color: rgb(238, 239, 241);
+    padding: 20px;
+    box-shadow: 0 0 30px rgb(29, 28, 28);
+  }
+
+  .container h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .container .input_box {
+    position: relative;
+    width: 100%;
+    height: 36px;
+    margin: 20px 0;
+  }
+
+  .input_box input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    padding: 18px 25px 20px 20px;
+  }
+
+  .input_box input::placeholder {
+    color: rgb(209, 253, 239);
+  }
+
+  .input_box i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+  }
+
+  .container .rem-for {
+    color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin: 15px 15px;
+  }
+
+  .rem-for a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+
+  .rem-for a:hover {
+    text-decoration: underline;
+    color: rgb(140, 219, 219);
+  }
+
+  .container .signup {
+    color: antiquewhite;
+    text-align: center;
+    font-size: 18px;
+    margin: 18px;
+  }
+
+  .signup a {
+    color: aliceblue;
+    text-decoration: none;
+    margin: 15px;
+  }
+
+  .signup a:hover {
+    text-decoration: underline;
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn button {
+    height: 50px;
+    width: 250px;
+    border-radius: 20px;
+    margin: 20px;
+    opacity: 30%;
+    box-shadow: 0 0 10px rgb(66, 65, 65);
+    cursor: pointer;
+    font-size: 20px;
+    font-style: bold;
+    font-weight: 500;
+    color: rgb(2, 2, 2);
+  }
+
+  .btn button:hover {
+    opacity: 100%;
+    box-shadow: 0 0 15px rgb(27, 165, 175);
+  }
+
+  .hidden {
+    display: none;
+  }
